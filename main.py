@@ -15,7 +15,7 @@ def attack(char_name: str, char_class: str) -> str:
     if char_class == 'healer':
         return (f'{char_name} нанёс урон противнику равный '
                 f'{5 + randint(-3, -1)}')
-    return (f'{char_name} не применил атаку')
+    return (f'{char_name} нанёс 5 урона')
 
 
 def defence(char_name: str, char_class: str) -> str:
@@ -26,7 +26,7 @@ def defence(char_name: str, char_class: str) -> str:
         return (f'{char_name} блокировал {10 + randint(-2, 2)} урона')
     if char_class == 'healer':
         return (f'{char_name} блокировал {10 + randint(2, 5)} урона')
-    return (f'{char_name} не применил не блокировал')
+    return (f'{char_name} блокировал 10 урона')
 
 
 def special(char_name: str, char_class: str) -> str:
